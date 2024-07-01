@@ -87,6 +87,7 @@ resource "azurerm_linux_web_app" "python" {
 }
 
 
+
 resource "azurerm_app_service_source_control" "python_scm" {
   app_id   = azurerm_linux_web_app.python.id
   repo_url = var.AZURE_APP_SERVICE_REPO_URL

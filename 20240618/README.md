@@ -10,7 +10,7 @@ export TF_VAR_AZURE_APP_SERVICE_REPO_URL='https://github.com/andreagrossi0/2023-
 
 terraform init
 
-terraform import azurerm_resource_group.rg /subscriptions/d66e7c68-0149-4c50-ad72-c2d5c26dc60e/resourcegroups/learn-d6b9583c-4aaf-4c91-81fc-08ec88a281a2
+terraform import azurerm_resource_group.rg /subscriptions/d66e7c68-0149-4c50-ad72-c2d5c26dc60e/resourceGroups/learn-aaef6bce-ec25-4482-842d-23701f117bab
 
 az webapp log tail --name '...' --resource-group $TF_VAR_AZURE_RESOURCE_GROUP
 
